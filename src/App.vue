@@ -1,23 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
 
 <script>
+import store from './store/store.js'
 export default {
-  name: 'App'
+  name: 'App',
+  store,
+  mounted () {
+    // $('#pp').click(function () {
+    //   console.log(287484)
+    // })
+  }
 }
 </script>
 
-<style>
+<style lang="less">
+@import 'assets/css/common.less';
+body,html {
+  width: 100%;
+  height:100%;
+  font-size: 13px;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>
