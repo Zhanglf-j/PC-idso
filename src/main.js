@@ -11,8 +11,16 @@ import 'element-ui/lib/theme-chalk/index.css'
 import $ from 'jquery'
 Vue.use(ElementUI)
 Vue.use(VueAxios, axios)
-
 Vue.config.productionTip = false
+
+// window.store = store
+// window.HOST = "http://127.0.0.1/"
+// window.baseUrl = "http://127.0.0.1"
+// window.websocketUrl = "127.0.0.1:9501"
+// axios.defaults.baseURL = 'http://47.104.159.115:8080'
+// axios.defaults.timeout = 1000 * 15
+// axios.defaults.headers.authKey = Lockr.get('authKey')
+// axios.defaults.headers['Content-Type'] = 'application/json'
 
 /* eslint-disable no-new */
 new Vue({

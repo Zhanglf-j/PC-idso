@@ -4,7 +4,7 @@
       <div>
         <img src="../assets/images/logo.jpg" class="logo" alt="">
         <span class="title">口腔门诊管理系统</span>
-        <el-select v-model="value" placeholder="请选择">
+        <el-select class="el-select_26" v-model="value" placeholder="请选择">
           <el-option
             v-for="item in options"
             :key="item.value"
@@ -14,7 +14,7 @@
         </el-select>
       </div>
       <div>
-        <el-select v-model="value2" placeholder="请选择">
+        <el-select class="el-select_26" v-model="value2" placeholder="请选择">
           <el-option
             v-for="item in options2"
             :key="item.value"
@@ -111,6 +111,11 @@
         .logo {
           border-radius: 50%;
           width: 45px;
+        }
+        .el-select .el-input__inner {
+          color: #fff;
+          border: none;
+          background: none;
         }
       }
       >div:nth-of-type(2) {

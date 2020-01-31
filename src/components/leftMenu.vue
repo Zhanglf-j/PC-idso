@@ -11,7 +11,7 @@
             <img v-if="currentPath == 2" src="../assets/images/outpatient_active.png" alt="">
             门诊工作
           </template>
-          <el-menu-item index="2-1">早会签到</el-menu-item>
+          <el-menu-item index="2-1" @click="getRouter('signin')">早会签到</el-menu-item>
           <el-menu-item index="2-2" @click="getRouter('outpatient')">早会看板</el-menu-item>
           <el-menu-item index="2-3">早会管理</el-menu-item>
           <el-menu-item index="2-4">门诊业绩设置</el-menu-item>
@@ -75,7 +75,7 @@
 
 <style lang="less">
   .menuList {
-    width: 11.5%;
+    width: 12%;
     height: calc(100% - 55px);
     overflow-y: auto;
     background: #415058;
